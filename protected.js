@@ -12,30 +12,11 @@ enroll.forEach(function(el) {
             course: e.target.dataset.course
         }
 
-        // fetch("login.php", {
-        //     method: "POST",
-        //     body: JSON.stringify(request)
-
-        // }).then(function(response) {
-        //     response.json().then(function(data) {
-        //         switch (data.status) {
-        //             case "success":
-        //                 // login attempt successful
-        //                 window.location.href = "dashboard.php";
-        //                 break;
-        //             case "error":
-
-        //                 Swal.fire({
-        //                     icon: "error",
-        //                     title: "Oops...",
-        //                     text: data.message,
-        //                 });
-
-        //                 break;
-        //         }
-        //     })
-        // })
-
+        fetch("enroll.php", {
+            method: "POST",
+            body: JSON.stringify(request),
+        })
+        
     })
 
 })
