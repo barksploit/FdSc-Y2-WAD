@@ -2,11 +2,11 @@
 session_start();
 
 if (isset($_SESSION["id"]) == false) {
-    // If user is not logged in
+      // If user is not logged in
 
-    header("Location: index.html");
-    die();
-
+          header("Location: index.html");
+          die();
+              
 }
 
 include 'connect.php';
