@@ -1,0 +1,3 @@
+09:00:00 - Welcome to the Notice Board!
+09:00:00 - This is a demo site to show you how a basic XSS attack would work.
+09:00:00 - <script>alert('hello xss')</script>

@@ -1,0 +1,77 @@
+#battle {
+    height:100vh;
+    inset:0;
+    z-index:-1;
+    position:absolute;
+    width: 100%;
+    display: flex;
+    flex-wrap:nowrap;
+}
+
+#blue {
+    background-color: blue;
+    height:100%;
+    width:50%;
+    display: flex;
+    justify-content: center;
+            flex-direction: column;
+            transition: width 0.2s;
+    align-items: center;
+}
+
+#red {
+    background-color: red;
+    height: 100%;
+    width: 50%;
+    transition: width 0.2s;
+        display: flex;
+        flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: white;
+    font-family: Arial;
+    font-size: 2rem;
+}
+
+h3 {
+    color: white;
+    font-family: Arial;
+    font-size: 4rem;
+}
+
+.celebrate {
+    visibility: hidden;
+    font-size: 5rem;
+}
+
+
+
+#form {
+
+    display: flex;
+    column-gap: .25rem;
+
+    input {
+        padding: .5rem;
+        font-family: Arial;
+    }
+
+    label {
+        color: white;
+        font-family: Arial;
+        font-size: 1.25rem;
+    }
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.form-group:not(:last-of-type) {
+    margin-bottom: .5rem;
+}
